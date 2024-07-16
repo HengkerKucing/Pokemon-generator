@@ -5,34 +5,47 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background-color: #eff3ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #eff3ff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 350px;
-    position: absolute;
-    transform:  translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
-
+    text-align: center;
+    margin: 0 auto;
+    align-self: center;
+  }
+  
 #card {
     position: relative;
     width: 100%;
     padding: 30px 20px;
-    background: radial-gradient(
-        circle at 50% 0%, orange 36%, #ffffff 36%
-    );
     box-shadow: 0 20px 30px rgba(0,0,0,0.15);
     border-radius: 10px;
+    background-color: #ffffff;
 }
 
 #card img {
     display: block;
-    widht: 150px;
+    width: 150px;
     max-height: 200px;
-    position: relative;
     margin: 20px auto;
 }
 
@@ -66,6 +79,8 @@ body{
 
 .types span {
     padding: 5px 20px;
+    border-radius: 20px;
+    color: #ffffff;
 }
 
 .stats {
@@ -85,9 +100,7 @@ body{
     font-size: 18px;
     background-color: #101010;
     color: #ffffff;
-    position: relative;
     margin: 30px auto;
     border: none;
     border-radius: 5px;
 }
-
